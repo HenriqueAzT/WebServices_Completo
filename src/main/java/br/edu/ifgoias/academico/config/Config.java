@@ -14,11 +14,11 @@ import br.edu.ifgoias.academico.repositories.CursoRepository;
 @Configuration
 public class Config implements CommandLineRunner {
 
-	@Autowired
-	private CursoRepository cursoRep;
+	//@Autowired
+	//private CursoRepository cursoRep;
 	
-	@Autowired
-	private AlunoRepository alunoRep;
+	//@Autowired
+	//private AlunoRepository alunoRep;
 	
 	@Override
 	public void run(String... args) throws Exception {
@@ -35,21 +35,21 @@ public class Config implements CommandLineRunner {
 
 				// cursoRep.deleteById(8);
 
-				System.out.println("Qtde Cursos: " + cursoRep.count());
+				//System.out.println("Qtde Cursos: " + cursoRep.count());
 
-				Aluno a1 = new Aluno(null, "Caroline", "Feminino", Date.valueOf("2000-04-24"));
+				//Aluno a1 = new Aluno(null, "Caroline", "Feminino", Date.valueOf("2000-04-24"));
 
-				Aluno a2 = new Aluno(null, "Isabelle", "Feminino", Date.valueOf("2000-12-28"));
+				//Aluno a2 = new Aluno(null, "Isabelle", "Feminino", Date.valueOf("2000-12-28"));
 
-				alunoRep.save(a1);
+				//alunoRep.save(a1);
 
-				alunoRep.save(a2);
+				//alunoRep.save(a2);
 
 				// alunoRep.deleteById(1);
 
 				// alunoRep.deleteById(2);
 
-				System.out.println("Qtde Alunos: " + alunoRep.count());
+				//System.out.println("Qtde Alunos: " + alunoRep.count());
 	}
 
 }
