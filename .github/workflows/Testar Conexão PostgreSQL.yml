@@ -18,10 +18,9 @@ jobs:
       - name: Testar Conexão PostgreSQL
         run: |
           export PGPASSWORD=$POSTGRES_PASSWORD
-          psql -h $POSTGRES_HOST -U $POSTGRES_USER -d $POSTGRES_DB -c "SELECT 1"
-
+          psql -h localhost -U postgres -d SYSACAD -c "SELECT 1"
         env:
           POSTGRES_HOST: localhost
-          POSTGRES_USER: postgre
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: aluno
           POSTGRES_DB: SYSACAD
